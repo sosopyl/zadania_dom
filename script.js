@@ -83,20 +83,157 @@
 // console.log(res)
 // text.textContent = res
 // }
+
 // задание 8
+// let inp = document.querySelector('input')
+// inp.addEventListener('blur', function(){
+//     let date = inp.value.split('.')
+//     let ndate = date.reverse()
+//     let res = ndate.join('-')
+//     inp.value = res
+// })
+
 // задание 9
+// let btn = document.querySelector('#btn')
+// let elem = document.querySelector('#elem')
+//  btn.addEventListener('click', function(){
+//     let text1 = elem.value
+//     let arr = text1.split('')
+//     let arr2 = arr.reverse();
+//     let text2 = arr2.join('')
+//     if( text1 == text2){
+//         console.log('yes')
+//     } else (console.log('no'))
+//  })
+
+
 // задание 10
+// let elem = document.querySelector('input')
+// elem.addEventListener('blur', function(){
+//     let str = elem.value
+//     let a = str.indexOf('3', 0)
+//     if(a == '-1'){console.log('no')} else(console.log('yes'))
+// })
+
 // задание 11
+// let elems = document.querySelectorAll('p')
+// let btn = document.querySelector('#btn')
+
+// btn.addEventListener('click', function(){
+//     for(let i =0;  i < elems.length; ){
+//         let elem = elems[i++]
+//         elem.textContent = elem.textContent + ' ' + i
+//     }
+// })
+
 // задание 12
+// let as = document.querySelectorAll('a')
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function(){
+//     for(let elem of as){
+//         elem.textContent = elem.textContent + "(" + elem.href +")"
+//     }
+// } )
+
 // задание 13
+let elems = document.querySelectorAll('a');
+
+// function func() {
+// 	for (let i = 0; i < elems.length; i++) {
+// 		if ( (elems[i].startsWith('http://') == true)) {
+//  			elems[i].textContent += '!';
+// 		}
+// 	}
+//  }    
+
 // задание 14
+// let elems = document.querySelectorAll('p')
+// for(let elem of elems){
+//     elem.addEventListener('click', function(){
+//         elem.textContent = elem.textContent * elem.textContent
+//     })
+// }
+
 // задание 15
+// let elem = document.querySelector('input')
+// elem.addEventListener('blur', func)
+
+// function func() {
+// 	let dayWeak = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+//     let str = elem.value;
+// 	let arr = str.split('.');
+// 	let arr2 = arr.reverse();
+// 	let str1 = arr2.join(',')
+// 	let date = new Date(str1);
+// 	let day = date.getDay();
+// 	let p = document.getElementById('text');
+// 	elem.value = dayWeak[day];
+// }
+
 // задание 16
+// let elem = document.querySelector('#elem')
+// let btn1 = document.querySelector('#btn1')
+// let btn2 = document.querySelector('#btn2')
+
+// btn1.addEventListener('click', function(){
+//     if(elem.value >= 0){
+//         elem.value =  +elem.value + 1
+//     }
+// })
+// btn2.addEventListener('click', function(){
+//         elem.value =  +elem.value - 1
+// })
+
 // задание 17
+//  let elem = document.querySelectorAll('p')
+//  let itog = document.querySelector('input')
+
+//  for(let part of elem){
+//     part.addEventListener('click', function(){
+//         itog.value = +itog.value + 1
+//     })
+//  }
+
 // задание 18
+//  let texts = document.querySelectorAll('div')
+// for(let elem of texts){
+//     elem.textContent = elem.textContent.slice(0, 10) + '...'
+// }
+
 // задание 19
+// let elem = document.querySelector('input')
+//  elem.addEventListener('blur', function(){
+//     if(+elem.value > 0 & +elem.value < 100){
+//     elem.style.color = 'green'
+//  } else { elem.style.color = 'red'}})
+
 // задание 20
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function(){
+//     let str = ''
+//     let letters = "1234567890qwertyuiopasdfghjklzxcvbnm"
+//     for(let i = 0; i < 8; i++){
+//         str += letters.charAt(Math.floor(Math.random()*letters.length))
+//         elem.value = str
+//     }
+// })
+
 // задание 21
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+
+// btn.addEventListener('click', function(){
+//     let text2 = ''
+//     let text = elem.value
+//     for(let i = 0; i < text.length; i++){
+//         text2 += text.charAt(Math.floor(Math.random()*text.length))
+//                 elem.value = text2
+//             }
+// })
 // задание 22
+
+
+
 // задание 23
 // задание 24
