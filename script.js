@@ -136,7 +136,7 @@
 // } )
 
 // задание 13
-let elems = document.querySelectorAll('a');
+//let elems = document.querySelectorAll('a');
 
 // function func() {
 // 	for (let i = 0; i < elems.length; i++) {
@@ -232,8 +232,62 @@ let elems = document.querySelectorAll('a');
 //             }
 // })
 // задание 22
-
-
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+// let text = document.querySelector('p')
+//  btn.addEventListener('click', function(){
+//     text.textContent = (+elem.value - 32) * (5/9)
+//  })
 
 // задание 23
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+// let text = document.querySelector('p')
+
+// btn.addEventListener('click', function(){
+//     let arr = elem.value.split('')
+//     let res = 1
+//     for(let num of arr){
+//         res *= num
+//     }
+//     text.textContent = res
+
+// })
+
 // задание 24
+
+let elema = document.querySelector('#a')
+let elemb = document.querySelector('#b')
+let elemc = document.querySelector('#c')
+let btn = document.querySelector('#btn')
+let text = document.querySelector('p')
+
+btn.addEventListener('click', function(){
+    let a = +elema.value
+    let b = +elemb.value
+    let c = +elemc.value
+
+    if (a == 0)
+    return false
+    let res = []
+    let d = b*b - 4*a*c
+    console.log(d)
+
+    if(d < 0)
+    return false;
+
+    if(d == 0)
+        res["quadratic roots"] = (-b + Math.sqrt(d)) / (2 * a);
+
+     else if(d > 0){
+        let tmp = [];
+        tmp.push((-b + Math.sqrt(d)) / (2 * a));
+        tmp.push((-b - Math.sqrt(d)) / (2 * a));
+        res["quadratic roots"] = tmp;
+        console.log(tmp)
+        let roots = tmp.join(';')
+        text.textContent = roots
+        }
+
+
+})
