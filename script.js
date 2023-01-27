@@ -240,18 +240,19 @@
 //  })
 
 // задание 23
-// let elem = document.querySelector('#elem')
-// let btn = document.querySelector('#btn')
-// let text = document.querySelector('p')
+let elem = document.querySelector('#elem')
+let btn = document.querySelector('#btn')
+let text = document.querySelector('p')
 
-// btn.addEventListener('click', function(){
-//     let arr = elem.value.split('')
-//     let res = 1
-//     for(let num of arr){
-//         res *= num
-//     }
-//     text.textContent = res
-
+btn.addEventListener('click', function(){
+let arr = 1
+for(let i = 1; i <=  +elem.value; i++)
+{
+arr *= i
+}
+let res = arr
+text.textContent = res
+})
 // })
 
 // задание 24
